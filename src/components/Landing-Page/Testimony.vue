@@ -1,6 +1,7 @@
 <template>
   <section class="testimony-container mb-5">
     <div class="container">
+      <h2 class="text-center text-light">Our Team</h2>
       <div class="row">
         <div
           class="col-lg-6 mb-4"
@@ -34,15 +35,14 @@ export default {
         name: "Budi Utomo",
         profileImage: "/images/profile.png",
         role: "Backend Developer",
-        testimony:
-          "Lorem Ipsum Deserunt assumenda maxime quos veritatis, atque debitis.",
+        testimony: "Dafidea Membuat Saya Belajar Banyak Hal Baru",
       },
       {
         name: "Andi Nugraha",
         profileImage: "/images/profile.png",
         role: "Frontend Developer",
         testimony:
-          "Lorem Ipsum Deserunt assumenda maxime quos veritatis, atque debitis.",
+          "Tempat Kerja Yang Asik dan Nyaman, Serta Team yang Professional",
       },
     ]);
 

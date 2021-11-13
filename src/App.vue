@@ -3,7 +3,7 @@
   <router-view />
 </template>
 <script>
-import Navbar from "../src/components/Navbar.vue";
+import Navbar from "./components/Landing-Page/Navbar.vue";
 export default {
   components: { Navbar },
   setup() {},
