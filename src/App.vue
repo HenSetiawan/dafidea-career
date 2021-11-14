@@ -1,11 +1,8 @@
 <template>
-  <Navbar />
   <router-view />
 </template>
 <script>
-import Navbar from "./components/Landing-Page/Navbar.vue";
 export default {
-  components: { Navbar },
   setup() {},
 };
 </script>
@@ -16,5 +13,4 @@ export default {
 * {
   font-family: "Poppins", sans-serif;
 }
-
 </style>
