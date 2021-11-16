@@ -4,9 +4,6 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "about" */ "../views/Home.vue");
     },
@@ -14,9 +11,6 @@ const routes = [
   {
     path: "/login",
     name: "Login",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "about" */ "../views/Login.vue");
     },
@@ -24,12 +18,27 @@ const routes = [
   {
     path: "/dashboard",
     name: "dashboard",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: function () {
       return import(/* webpackChunkName: "about" */ "../views/Dashboard.vue");
     },
+    children: [
+      {
+        path: "table",
+        component: function () {
+          return import(
+            /* webpackChunkName: "about" */ "../views/dashboard/TableUser.vue"
+          );
+        },
+      },
+      {
+        path: "form",
+        component: function () {
+          return import(
+            /* webpackChunkName: "about" */ "../views/dashboard/FormUser.vue"
+          );
+        },
+      },
+    ],
   },
 ];
 

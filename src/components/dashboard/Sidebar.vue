@@ -1,14 +1,13 @@
 <template>
   <div class="sidebar">
-    <div class="logo-details">
-      <i class="bx bx-home"></i>
-      <div class="logo_name">Dafidea</div>
-    </div>
+    <router-link to="/dashboard">
+      <div class="logo-details">
+        <i class="bx bx-home"></i>
+        <div class="logo_name">Dafidea</div>
+      </div>
+    </router-link>
     <NavItem />
   </div>
-  <section class="home-section">
-    <div class="text">Dashboard</div>
-  </section>
 </template>
 
 <script>
@@ -36,7 +35,11 @@ export default {
   background: #11101d;
   padding: 6px 14px;
   z-index: 99;
-  width: 250px;
+  width: 200px;
+}
+
+.sidebar a {
+  text-decoration: none;
 }
 
 .sidebar .logo-details {
@@ -62,21 +65,6 @@ export default {
   opacity: 1;
 }
 
-.home-section {
-  position: relative;
-  background: #e4e9f7;
-  min-height: 100vh;
-  top: 0;
-  left: 250px;
-  width: calc(100% - 250px);
-}
-.home-section .text {
-  display: inline-block;
-  color: #11101d;
-  font-size: 25px;
-  font-weight: 500;
-  margin: 18px;
-}
 @media (max-width: 420px) {
   .sidebar li .tooltip,
   .links_name,

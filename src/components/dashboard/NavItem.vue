@@ -1,40 +1,22 @@
 <template>
   <ul class="nav-list">
     <li>
-      <a href="#">
+      <router-link to="/dashboard">
         <i class="bx bx-grid-alt"></i>
         <span class="links_name">Dashboard</span>
-      </a>
+      </router-link>
     </li>
     <li>
-      <a href="#">
-        <i class="bx bx-user"></i>
-        <span class="links_name">User</span>
-      </a>
+      <router-link to="/dashboard/table">
+        <i class="bx bx-table"></i>
+        <span class="links_name">Table</span>
+      </router-link>
     </li>
     <li>
-      <a href="#">
-        <i class="bx bx-chat"></i>
-        <span class="links_name">Messages</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="bx bx-pie-chart-alt-2"></i>
-        <span class="links_name">Analytics</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="bx bx-folder"></i>
-        <span class="links_name">File Manager</span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="bx bx-cart-alt"></i>
-        <span class="links_name">Order</span>
-      </a>
+      <router-link to="/dashboard/form">
+        <i class="bx bxs-data"></i>
+        <span class="links_name">Form</span>
+      </router-link>
     </li>
   </ul>
 </template>
