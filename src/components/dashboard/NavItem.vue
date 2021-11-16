@@ -1,12 +1,6 @@
 <template>
   <ul class="nav-list">
     <li>
-      <router-link to="/dashboard">
-        <i class="bx bx-grid-alt"></i>
-        <span class="links_name">Dashboard</span>
-      </router-link>
-    </li>
-    <li>
       <router-link to="/dashboard/table">
         <i class="bx bx-table"></i>
         <span class="links_name">Table</span>

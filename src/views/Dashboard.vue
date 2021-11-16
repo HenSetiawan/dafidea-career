@@ -30,8 +30,8 @@ export default {
 
 @media (max-width: 420px) {
   .dashboard-section {
-    left: 80px;
-    width: calc(100% - 80px);
+    left: 85px;
+    width: calc(100% - 85px);
   }
 }
 </style>
